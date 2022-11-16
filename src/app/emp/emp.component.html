@@ -1,1 +1,21 @@
-<p>emp works!</p>
+<div class="container text-center">
+    <h2>Dolgozók</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Név</th>
+                <th>Hely</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let emp of employees">
+                <td>{{ emp.id }}</td>
+                <td>{{ emp.name }}</td>
+                <td>{{ emp.city }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
